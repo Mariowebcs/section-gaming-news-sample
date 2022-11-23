@@ -36,7 +36,7 @@ img {
 a {
     text-decoration: none;
     color: var(--primary-color);
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 a:hover,
@@ -51,6 +51,7 @@ a:focus {
 
 .section-text-main {
     font-size: 1.5rem;
+    padding: 0  1em 0 0;
 }
 
 .section-title {
@@ -70,6 +71,7 @@ a:focus {
     padding: .6em 1.3em;
     border-radius: .3rem;
     transition: .2s;
+    font-size: 1.3rem;
 }
 
 .btn:hover,
@@ -86,11 +88,10 @@ a:focus {
 }
 
 .card-hover {
-    color: initial;
+    color: rgb(72, 72, 72);
 }
 
-.card-hover:hover,
-.card-hover:focus {
+.card-hover:hover{
     color: var(--primary-color);
 }
 
