@@ -1,0 +1,196 @@
+:root {
+    --primary-color: #E60012;
+    --accent-color: #AC000D;
+}
+
+
+/*TYPOGRAPHY*/
+html,
+body {
+    /* width: 100%; */
+    font-size: 16px;
+    color: rgb(72, 72, 72);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+strong {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+a:hover,
+a:focus {
+    color: var(--accent-color);
+}
+
+/* hr{
+    margin: 2em 0;
+    width: 100%;
+} */
+
+.section-text-main {
+    font-size: 1.5rem;
+}
+
+.section-title {
+    margin: .7em 0 .7em 0;
+    font-size: 1.6rem;
+}
+
+.section-img-main {
+    margin: 0 0 1em 0;
+}
+
+/* BUTTONS */
+
+.btn {
+    color: #fff;
+    background: var(--primary-color);
+    padding: .6em 1.3em;
+    border-radius: .3rem;
+    transition: .2s;
+}
+
+.btn:hover,
+.btn:focus {
+    background: var(--accent-color);
+    padding: 1em 1.35em;
+    color: #fff;
+}
+
+.btn-main {
+    margin: 1.8em auto;
+    display: block;
+    text-align: center;
+}
+
+.card-hover {
+    color: initial;
+}
+
+.card-hover:hover,
+.card-hover:focus {
+    color: var(--primary-color);
+}
+
+/* CARD */
+
+.info {
+    margin: .8em 0;
+}
+
+
+.read-more {
+    border-bottom: 1px solid var(--accent-color);
+    font-size: 1rem;
+    display: inline-block;
+    margin: 1.5em 0 0 0;
+}
+
+.big {
+    width: 100%;
+    margin: 0 0 3em 0;
+}
+
+.card-description {
+    margin: 1.5em 0 .8em 0;
+    font-size: 1rem;
+}
+
+.card-image {
+    border-radius: .5em;
+}
+
+/* CARD SMALL */
+.card-small {
+    width: 48%;
+    margin: 0 0 2em 0;
+}
+
+.card-body-small {
+    height: 3rem;
+}
+
+
+
+/* LAYOUT */
+
+.container {
+    width: 90%;
+    max-width: 35.3125rem;
+    margin: 1em auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* .container-news-main{
+    min-width: 100%;
+    max-width: 71.5rem;
+    margin: 0 auto;
+} */
+/* .section-gaming{
+    height: 100vh;
+} */
+
+
+@media(min-width:768px) {
+    .container {
+        width: 90%;
+        max-width: 71.5rem;
+    }
+
+    .btn-main {
+        width: 20%;
+        display: inline-block;
+        margin-left: 1em;
+    }
+
+    .flex {
+        flex-direction: row;
+    }
+
+    .big {
+        max-width: 48%;
+    }
+
+    .card-image {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+}
